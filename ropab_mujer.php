@@ -93,7 +93,7 @@
                         <div class="dropdown d-inline-block">
                             <button type="button" class="btn header-item waves-effect"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="" src="plantilla_wp/img/bandera.png" alt="Header Language" height="16">
+                                <img class="" src="" alt="Header Language" height="16">
                                 <span class="d-none d-sm-inline-block ml-1">Español</span>
                                 <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
                             </button>
@@ -242,7 +242,7 @@
                 <div data-simplebar class="h-100">
 
                     <div class="navbar-brand-box">
-                        <a href="index.html" class="logo">
+                        <a href="index.php" class="logo">
                             <i class="mdi mdi-album"></i>
                             <span>
                                 Tienda online
@@ -257,12 +257,12 @@
                             <li class="menu-title">Menu</li>
 
                             <li>
-                                <a href="index.html" class="waves-effect"><i class="mdi mdi-home-analytics"></i><span
+                                <a href="index.php" class="waves-effect"><i class="mdi mdi-home-analytics"></i><span
                                         class="badge badge-pill badge-primary float-right">7</span><span>Inicio</span></a>
                             </li>
 
                             <li>
-                                <a href="ropab_mujer.html"><i
+                                <a href="ropab_mujer.php"><i
                                         class="mdi mdi-diamond-stone"></i><span>Categorias</span></a>
 
                             </li>
@@ -282,14 +282,13 @@
                                 <a href="javascript: void(0);"><i
                                         class="mdi mdi-format-list-bulleted-type"></i><span
                                         class="badge badge-pill badge-danger float-right">6</span><span>Pedidos & Ventas</span></a>
-                                
+                               
                             </li>
 
                             <li>
                                 <a href="javascript: void(0);"><i
                                         class="mdi mdi-black-mesa"></i><span>Administradores</span></a>
                                 
-                                </ul>
                             </li>
 
                             <li class="menu-title">Otras Categorias</li>
@@ -346,21 +345,32 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
-                                    
-                                    <div class="page-title-right">
-                                        <ol class="breadcrumb m-0">
-                                            
-                                        </ol>
+                                    <div class="container-fluid row">
+                                        <?php for($i=0; $i < 10; $i++) {
+                                            ?>
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <img class="card-img-top img-fluid" src="img/ropa de baño 1.jpeg">
+                                                <div class="card-body">
+                                                    <h5 class="card-title"></h5>
+                                                    <p class="card-text">
+                                                        Ropa de baño
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <?php } ?>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
                         <!-- end page title -->
-
                     </div> <!-- container-fluid -->
-                       
                 </div>
+            
+                      
+               
                 <!-- End Page-content -->
 
                 <footer class="footer">
