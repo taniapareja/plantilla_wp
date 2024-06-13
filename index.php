@@ -1,33 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <title> Xeloro - Admin & Dashboard Template</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-        <meta content="MyraStudio" name="author" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-        <!-- App css -->
-        <link href="plantilla/Admin/vertical/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="plantilla/Admin/vertical/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="plantilla/Admin/vertical/assets/css/theme.min.css" rel="stylesheet" type="text/css" />
-
-    </head>
-
-    <body>
-
-        <!-- Begin page -->
-        <div id="layout-wrapper">
-            <div class="header-border"></div>
             
             <?php
-
-               include ("include/menu.php");
+               get_header();
+             
             ?>
 
             
@@ -54,13 +29,13 @@
                                         </ol>
                                         <div class="carousel-inner" role="listbox">
                                             <div class="carousel-item active">
-                                                <img class="d-block img-fluid" src="assets/images/media/sm-7.jpg" alt="First slide">
+                                                <img class="d-block img-fluid" src="<?php bloginfo('template_url')?>/img/ropa de baño 1.jpeg" alt="First slide">
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="d-block img-fluid" src="assets/images/media/sm-1.jpg" alt="Second slide">
+                                                <img class="d-block img-fluid" src="<?php bloginfo('template_url')?>/img/ropa de baño 1.jpeg"alt="Second slide">
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="d-block img-fluid" src="assets/images/media/sm-2.jpg" alt="Third slide">
+                                                <img class="d-block img-fluid" src="<?php bloginfo('template_url')?>/img/ropa de baño 1.jpeg" alt="Third slide">
                                             </div>
                                         </div>
                                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -97,7 +72,8 @@
                 </div>
                 <!-- End Page-content -->
                <?php
-               include("menu/pie_pagina.php");
+                   get_footer();
+             
                ?>
 
                
@@ -113,14 +89,14 @@
 
 
         <!-- jQuery  -->
-        <script src="plantilla/Admin/vertical/assets/js/jquery.min.js"></script>
-        <script src="plantilla/Admin/vertical/assets/js/bootstrap.bundle.min.js"></script>
-        <script src="plantilla/Admin/vertical/assets/js/metismenu.min.js"></script>
-        <script src="plantilla/Admin/vertical/assets/js/waves.js"></script>
-        <script src="plantilla/Admin/vertical/assets/js/simplebar.min.js"></script>
+        <script src="<?php bloginfo('template_url')?>/plantilla/Admin/vertical/assets/js/jquery.min.js"></script>
+        <script src="<?php bloginfo('template_url')?>/plantilla/Admin/vertical/assets/js/bootstrap.bundle.min.js"></script>
+        <script src="<?php bloginfo('template_url')?>/plantilla/Admin/vertical/assets/js/metismenu.min.js"></script>
+        <script src="<?php bloginfo('template_url')?>/plantilla/Admin/vertical/assets/js/waves.js"></script>
+        <script src="<?php bloginfo('template_url')?>/plantilla/Admin/vertical/assets/js/simplebar.min.js"></script>
 
         <!-- App js -->
-        <script src="plantilla/Admin/vertical/assets/js/theme.js"></script>
+        <script src="<?php bloginfo('template_url')?>/plantilla/Admin/vertical/assets/js/theme.js"></script>
 
     </body>
 
